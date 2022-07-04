@@ -38,10 +38,10 @@ app.post("/add/item", addItem)
 // The new json object is finally appended to a json 
 // list located in a file called database.json to represent our todos list.
 function addItem (request, response) {
-    let id = request.body.jsonObject.id
-    let task = request.body.jsonObject.task
-    let curDate = request.body.jsonObject.currentDate
-    let dueDate = request.body.jsonObject.dueDate
+    let id = request.body.jsonObject.id;
+    let task = request.body.jsonObject.task;
+    let curDate = request.body.jsonObject.currentDate;
+    let dueDate = request.body.jsonObject.dueDate;
     var newTask = {
       ID: id,
       Task: task,
